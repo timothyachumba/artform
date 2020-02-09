@@ -1,0 +1,20 @@
+.grid 
+  display grid
+  grid-template-columns repeat(6, b(col-start) 1fr)
+  grid-template-rows 1fr
+  grid-column-gap vw-calc(40)
+
+  .grid-item
+    grid-column col-start / span 6
+    position relative
+
+  +tablet-portrait-up()
+    for num in (1..6)
+      .grid-item.col-{num}
+        grid-column col-start / span num
+
+    for pos in (1..6)
+      .grid-item.pos-{pos}
+        grid-column-start pos
+
+    

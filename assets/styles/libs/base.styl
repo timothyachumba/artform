@@ -1,0 +1,129 @@
+base-font-size = 16px
+base-unit = 8px
+base-line-height = (base-font-size*1.2)
+
+easing = cubic-bezier(.215,.61,.355,1)
+
+// color ----------
+
+$mono-100 = #212121
+$mono-200 = #6B6B6B
+$mono-300 = #E6E6E6
+$blue-100 = #243546
+$blue-200 = #65798E
+$blue-300 = #CAD4DC
+$brown-100 = #5A4041
+$brown-200 = #9A7878
+$brown-300 = #C9B7B7
+$green-100 = #424635
+$green-200 = #66715C
+$green-300 = #D2D9C5
+$red-100 = #672F2A
+$red-200 = #994C41
+$red-300 = #DDC7C2
+$yellow-100 = #816D3B
+$yellow-200 = #A8925E
+$yellow-300 = #DCD1B4
+
+colors = "mono" "blue" "brown" "green" "red" "yellow"
+for c, i in colors
+  for num in 1 2 3
+    $vc = $+c+-+num+0+0
+    .b-{c}-{num}00
+      background-color $vc
+      fill $vc
+
+    .t-{c}-{num}00
+      color: $vc
+
+// reset ----------
+
+*
+  box-sizing border-box
+  margin 0
+  padding 0
+
+ul,li
+  list-style-type none
+
+input,
+label,
+select,
+button,
+textarea
+  margin 0
+  border 0
+  padding 0
+  display inline-block
+  vertical-align middle
+  white-space normal
+  background none
+  line-height 1
+  -webkit-appearance none
+
+input:focus
+	outline 0
+
+input,
+textarea
+	-webkit-box-sizing content-box
+	-moz-box-sizing content-box
+	box-sizing content-box
+
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select
+	-webkit-box-sizing border-box
+	-moz-box-sizing border-box
+	box-sizing border-box
+
+a
+  text-decoration none
+
+
+body
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  text-rendering optimizeLegibility
+  font-family cormo
+  background-color $mono-300
+  color $mono-100
+  opacity 1
+  transition opacity 600ms linear
+
+  // &::after
+  //   font-family hk-grotesk
+  //   text-align center
+  //   padding size-calc(2)
+  //   bottom size-calc(2)
+  //   position fixed
+  //   width size-calc(16)
+  //   left 50%
+  //   margin-left -(size-calc(8))
+  //   display block
+  //   background white
+  //   z-index 100
+  //   font-weight 600
+  //   border-radius 26px
+  //   box-shadow 0 2px 20px rbga(0,0,0,0.4)
+  //   box-sizing border-box
+    
+  //   +mobile()
+  //     content "Mobile"
+
+  //   +tablet-portrait-up()
+  //     content "P Tablet"
+
+  //   +tablet-landscape-up()
+  //     content "L Tablet"
+
+  //   +desktop-up()
+  //     content "Desktop"
+  
+  main
+    min-height 100%
+    overflow-x hidden

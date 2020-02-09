@@ -1,0 +1,16 @@
+{
+  "author": "akukoltd",
+  "name": "hakinskymagazine",
+  "version": "2.1.0",
+  "engines": {
+    "node": "7.10.0"
+  },
+  "dependencies": {
+    "browserify": "latest",
+    "jquery": "^3.4.1",
+    "nib": "latest",
+    "stylus": "latest",
+    "uglifyify": "latest",
+    "watchify": "latest"
+  }
+}

@@ -1,0 +1,39 @@
+.about
+  position relative
+
+  .building
+    background-size cover
+    background-position center center
+    background-color #111111
+    height 100vh
+    width calc(50% - 36px)
+    top 0
+    right 0
+    position fixed
+    z-index -2
+
+  .overlay
+    background-color rgba(black, 0.4)
+    height 100vh
+    width calc(50% - 36px)
+    top 0
+    right 0
+    position fixed
+    z-index -1
+    opacity 0
+
+  .about-content
+    padding vw-calc(40)
+    padding-top 100vh
+    color $offwhite
+
+    .arrow
+      font-size vw-calc(160)
+      height vw-calc(240)
+      margin-top vw-calc(-240)
+      text-align right
+    p
+      margin 0 0 vw-calc(40)
+
+      &:last-child
+        margin 0

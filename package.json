@@ -8,9 +8,15 @@
   "dependencies": {
     "browserify": "latest",
     "jquery": "^3.4.1",
+    "jquery.marquee": "^1.5.0",
+    "luxy.js": "^0.1.0",
+    "marquee3000": "^1.1.0",
     "nib": "latest",
     "stylus": "latest",
     "uglifyify": "latest",
     "watchify": "latest"
+  },
+  "devDependencies": {
+    "browserify-shim": "^3.8.14"
   }
 }

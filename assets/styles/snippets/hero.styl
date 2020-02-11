@@ -1,0 +1,36 @@
+.hero
+  height 100vh
+  background $yves
+  padding vw-calc(40)
+  flexbox(flex)
+  flex-direction(column)
+  justify-content(space-between)
+  position relative
+
+  .logo
+    mix-blend-mode overlay
+
+  &:hover
+    svg path
+      fill: url(#gradient)
+
+  svg path
+    fill: url(#gradient2)
+    transition fill 300ms ease
+
+  .hero-contact 
+    flexbox(flex)
+    justify-content(space-between)
+    mix-blend-mode overlay
+
+    a
+      font-size vw-calc(22)
+      text-transform uppercase
+      color black
+      font-weight 500
+
+      &:hover
+        font-family favorit lining
+    
+    
+    

@@ -1,0 +1,46 @@
+// shared styles
+@import '../../node_modules/nib'
+@import 'libs/mixins'
+@import 'libs/typography'
+@import 'libs/grid'
+@import 'libs/base'
+@import 'snippets/hero'
+@import 'snippets/about'
+@import 'snippets/clients'
+@import 'snippets/services'
+
+main
+  width 100vw
+  text-align justify
+
+  h2, p, ul
+    font-size base-font-size
+
+  h2
+    font-weight normal
+    text-transform uppercase
+    
+  p
+    hyphens auto
+
+  & > div
+    width calc(50vw - 36px)
+    min-height 100vh
+    position absolute
+
+  .left
+    left 0
+    background-color $yves
+
+    &.fixed
+      position fixed
+      top 0
+  
+  .right
+    right 0
+    
+    &.fixed
+      position fixed
+      bottom 0
+    
+

@@ -1,0 +1,71 @@
+// shared styles
+@import '../../node_modules/nib'
+@import 'libs/mixins'
+@import 'libs/typography'
+@import 'libs/grid'
+@import 'libs/base'
+
+.about-container
+  display grid
+  grid-template-columns 1fr
+  padding 0 vw-calc(72)
+
+  +tablet-portrait-up()
+    grid-template-columns vw-calc(240) auto auto
+    grid-column-gap vw-calc(32)
+    padding 0 vw-calc(32)
+    height 100vh
+
+  & > .div
+    height 100vh
+
+  .about-hero
+    flexbox(flex)
+    flex-direction(column)
+    justify-content(space-between)
+    min-height 100vh
+    padding vw-calc(72) 0
+    
+    +tablet-portrait-up()
+      padding vw-calc(32) 0
+      width vw-calc(260)
+
+    .logo
+      width 100%
+
+      +tablet-portrait-up()
+        width vw-calc(240)
+
+      svg
+        will-change transform
+        transform-origin top left
+
+        path
+          fill black
+
+    nav
+      a
+        color black
+
+        &:hover
+          font-family favline
+
+  .about-bio
+    flex 1 auto
+    overflow-y scroll
+
+    .bio-image
+      height calc(100vh - 3.8095238095vw)
+      background-position center center
+      background-size cover
+      margin vw-calc(72) 0
+
+      +tablet-portrait-up()
+        margin vw-calc(32) 0
+
+    p
+    h2
+      padding 0 0 vw-calc(72) 0
+
+      +tablet-portrait-up()
+        padding 0 0 vw-calc(32) 0

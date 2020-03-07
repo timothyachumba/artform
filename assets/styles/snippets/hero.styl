@@ -7,7 +7,8 @@
   background $yves
 
   +tablet-portrait-up()
-    min-height 100vh
+    height 100vh
+    min-height 700px
     padding vw-calc(32)
     margin 0 0 100vh 0
 
@@ -26,36 +27,44 @@
 
   .hero-contact 
     flexbox(flex)
-    writing-mode vertical-rl
-    text-orientation mixed
-    transform rotate(180deg)
+    justify-content(space-between)
     align-items(flex-end)
-    margin vw-calc(-1100) 0 0
 
-    +tablet-portrait-up()
-      margin 0
-      writing-mode horizontal-tb
-      text-orientation upright
-      transform rotate(0)
-      align-items(flex-start)
-      justify-content(space-between)
-    
-    p
-      margin-left vw-calc(-16)
+    .links
+      flexbox(flex)
+      writing-mode vertical-rl
+      text-orientation mixed
+      transform rotate(180deg)
+      align-items(flex-end)
+      margin vw-calc(-1100) 0 0
 
-      +tablet-portrait-up()
-        margin 0
+      // +tablet-portrait-up()
+      //   margin 0
+      //   writing-mode horizontal-tb
+      //   text-orientation upright
+      //   transform rotate(0)
+      //   align-items(flex-start)
+      //   justify-content(space-between)
+      
+      p
+        margin-left vw-calc(-16)
+
+        // +tablet-portrait-up()
+        //   margin 0
+
+
+      a
+        font-size vw-calc(80)
+        text-transform uppercase
+        font-weight 500
+        padding 0 0 vw-calc(80)
+
+        +tablet-portrait-up()
+          font-size vw-calc(24)
+          padding 0 0 vw-calc(24)
 
     a
-      font-size vw-calc(80)
-      text-transform uppercase
       color black
-      font-weight 500
-      padding 0 0 vw-calc(80)
-
-      +tablet-portrait-up()
-        font-size vw-calc(22)
-        padding 0 
 
       &:hover
         font-family favline

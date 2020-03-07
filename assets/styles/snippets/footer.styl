@@ -1,0 +1,26 @@
+footer
+  width 100vw
+  position relative
+  flexbox(flex)
+  flex-direction(column-reverse)
+
+  +tablet-portrait-up()
+    left -51.5476190476vw
+    flex-direction(row)
+    justify-content(space-between)
+
+  .contact
+  .rocks
+    +tablet-portrait-up()
+      width calc(50vw - 1.4285714286vw)
+
+  .rocks
+    background-size cover
+    background-position center center
+    background-color #111111
+    min-height 100vh
+    order 1
+    
+    +tablet-portrait-up()
+      min-height auto
+

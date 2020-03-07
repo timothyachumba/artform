@@ -1,0 +1,118 @@
+.section-container
+  background-color $offwhite
+  min-height 100vh
+
+  .section-navigation
+    padding vw-calc(80)
+    flexbox(flex)
+    width 100%
+    align-items(center)
+    background-color $offwhite
+    position relative
+    z-index 100
+
+    +tablet-portrait-up()
+      padding vw-calc(32)
+
+    .divider
+      height vw-calc(8)
+      background-color black
+      flex 1 auto
+      margin 0 vw-calc(80)
+
+      +tablet-portrait-up()
+        height vw-calc(3.8)
+        margin 0 vw-calc(24)
+
+      &:last-child
+        display none
+    
+    .section-navigation-item
+      text-transform uppercase
+      opacity 0.5
+      color black
+
+      +tablet-portrait-up()
+        font-size vw-calc(36)
+
+      &:hover
+        opacity 1
+        cursor pointer
+
+      &.visible
+        opacity 1
+        font-family favline
+
+    // span.divider
+    //   display block
+    //   padding 0 vw-calc(24)
+
+    //   &:last-child
+    //     display none
+
+  .section
+    padding vw-calc(80)
+    position absolute
+    visibility hidden
+    top 0
+    padding-top 0
+
+    +tablet-portrait-up()
+      padding vw-calc(32)
+      padding-top 0
+    
+    &.visible
+      position relative
+      opacity 1
+      visibility visible
+    
+    .single-section
+      margin 0
+
+      &:last-child
+        margin 0
+
+        button.active + .panel
+          border-bottom none
+
+      .panel
+        overflow hidden
+        max-height 0
+        transition max-height 0.2s ease-out
+        border-bottom 1px solid black
+      
+      h2, p, ul
+        margin 0 0 vw-calc(120)
+
+        +tablet-portrait-up()
+          margin 0 0 vw-calc(32)
+
+      button
+        width 100%
+        text-align left
+        padding vw-calc(96) 0
+        opacity 0.5
+        cursor pointer
+        
+        +tablet-portrait-up()
+          padding vw-calc(24) 0
+
+        &:hover
+          opacity 1
+
+        &:focus
+          outline none !important
+
+        &.active
+          opacity 1
+
+      ul
+        li
+          margin 0 0 vw-calc(24)
+
+          +tablet-portrait-up()
+            margin 0 0 vw-calc(8)
+
+          &:last-child
+            margin 0
+      

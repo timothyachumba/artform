@@ -1,0 +1,10 @@
+title: Section
+fields:
+  text:
+    label: Text
+    type: textarea
+    width: 1/2
+  steps:
+    label: Steps Breakdown
+    type: tags
+    width: 1/2

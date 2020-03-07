@@ -1,39 +1,49 @@
 .about
   position relative
+  flexbox(flex)
+  flex-direction(column)
+  justify-content(center)
+  
+  +tablet-portrait-up()
+    height auto
 
   .building
     background-size cover
     background-position center center
     background-color #111111
     height 100vh
-    width calc(50% - 36px)
-    top 0
-    right 0
-    position fixed
-    z-index -2
-
-  .overlay
-    background-color rgba(black, 0.4)
-    height 100vh
-    width calc(50% - 36px)
-    top 0
-    right 0
-    position fixed
-    z-index -1
-    opacity 0
 
   .about-content
-    padding vw-calc(40)
-    padding-top 100vh
+    padding vw-calc(80)
     color $offwhite
+    z-index 10
+    position relative
+    height 100vh
+
+    +tablet-portrait-up()
+      padding vw-calc(32)
+      padding-top 0
 
     .arrow
       font-size vw-calc(160)
       height vw-calc(240)
-      margin-top vw-calc(-240)
+      margin-top vw-calc(-200)
       text-align right
+      display none
+
+      +tablet-portrait-up()
+        display block
+
+    
+    .sticky
+      padding-top vw-calc(32)
+      
     p
-      margin 0 0 vw-calc(40)
+      margin 0 0 vw-calc(80)
+
+      +tablet-portrait-up()
+        margin 0 0 vw-calc(80)
+        font-size vw-calc(44)
 
       &:last-child
         margin 0

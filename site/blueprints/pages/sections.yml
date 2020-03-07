@@ -1,0 +1,6 @@
+title: Section
+preset: pages
+options:
+  url: false
+  status: false
+  delete: false

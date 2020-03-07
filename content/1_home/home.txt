@@ -1,0 +1,29 @@
+Title: Home
+
+----
+
+Seotitle: 
+
+----
+
+Seodescription: 
+
+----
+
+Abouttext:
+
+ARTFORM is a creative brand consultancy. We help brands remain culturally authentic.
+
+ARTFORM works with businesses to improve commercial performance by auditing and optimising their place in contemporary culture.
+
+----
+
+Clients: Soho House, Selfridges, Nike Inc., Boiler Room, The Berkeley Group, LVMH, Pernod Ricard, Landsec, Sony, Samsung, Virgin Money, IKEA
+
+----
+
+Contacttitle: Contact
+
+----
+
+Contacttext: Got questions? Just fill out the form below and we'll get back to you as soon as possible. Oh, don't worry, we'll never spam you.

@@ -1,3 +1,15 @@
 title: Site
-preset: pages
+preset: page
 unlisted: true
+fields:
+  description:
+    label: Website Description
+    type: textarea
+  instagram:
+    label: Instagram
+    type: text
+    width: 1/2
+  email:
+    label: Email
+    type: text
+    width: 1/2

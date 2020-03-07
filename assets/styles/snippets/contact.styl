@@ -1,0 +1,118 @@
+.contact
+  background-color $yves
+
+  .honeypot
+    position absolute
+    left -9999px
+
+  form
+    flexbox(flex)
+    flex-direction(column)
+    padding vw-calc(120) vw-calc(80)
+    min-height 100vh
+
+    +tablet-portrait-up()
+      padding vw-calc(32)
+      height 100vh
+
+    p
+    h2
+      margin 0 0 vw-calc(80)
+
+      +tablet-portrait-up()
+        margin 0 0 vw-calc(32)
+      
+    .field
+    .mc-field-group
+      flexbox(flex)
+      flex-direction(column)
+      position relative
+
+      &:first-child
+        margin 0
+
+      &#message-field
+        flex 1 auto
+
+        textarea
+          flex 1 auto
+
+      label
+        display none
+        
+    input
+    textarea
+      padding vw-calc(72)
+      color black
+      font-size vw-calc(108)
+      border 1px solid black
+      margin -1px 0 0
+      border-radius 0
+      font-family fav
+      font-weight 400
+
+      +tablet-portrait-up()
+        font-size vw-calc(34)
+        padding vw-calc(24)
+
+      &::placeholder
+        color black
+        opacity 1
+
+      &:focus
+        outline none !important
+
+      &.mce_inline_error
+        border-color black !important
+
+    textarea
+      resize none
+
+    input[type="submit"]
+      cursor pointer
+
+      &:hover
+        background-color black
+        color $offwhite
+
+  #mc_embed_signup_scroll
+    flex 1
+    flexbox(flex)
+    flex-direction(column)
+
+  #mc_embed_signup div.mce_inline_error
+    margin 0 !important
+    font-family fav
+    font-weight 400
+    font-size vw-calc(60)
+    position absolute
+    right 0
+    font-weight 400
+    background-color black
+    mix-blend-mode overlay
+
+    +tablet-portrait-up()
+      font-size vw-calc(20)
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border 1px solid black
+  -webkit-text-fill-color black
+  -webkit-box-shadow none
+  transition background-color 5000s ease-in-out 0s
+}
+
+.response
+  padding 16px
+  text-align center
+
+  a
+    color black
+    text-decoration underline

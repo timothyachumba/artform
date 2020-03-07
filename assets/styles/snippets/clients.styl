@@ -1,9 +1,25 @@
 .clients
-  position fixed
-  font-size 38px
+  font-size vw-calc(100)
   text-transform uppercase
-  width 100vh
-  overflow hidden
-  transform rotate(-90deg)
-  left calc(50% - 22px)
   white-space nowrap
+  background $offwhite
+  overflow hidden
+  position relative !important
+  padding vw-calc(40) 0
+
+  +tablet-portrait-up()
+    font-size vw-calc(36)
+    transform rotate(180deg) translateZ(0)
+    -webkit-transform-origin 50% 50%
+    padding 0
+    height 100vh
+    position sticky !important
+
+  & > div
+    background $offwhite
+    
+    +tablet-portrait-up()
+      transform rotate(90deg) translateZ(0)
+      -webkit-transform-origin 50% 50%
+      
+  

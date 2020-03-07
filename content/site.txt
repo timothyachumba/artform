@@ -1,9 +1,13 @@
-Title: ART/FORM — A cultural development company
+Title: ARTFORM — A creative brand consultancy
 
 ----
 
-Email: (email:hello@artform.london)
+Description: ARTFORM is a creative brand consultancy. We help brands remain culturally authentic.
 
 ----
 
-Instagram: (link: https://instagram.com/artform.studio text:@artform.studio)
+Email: hello@artform.london
+
+----
+
+Instagram: artform.studio

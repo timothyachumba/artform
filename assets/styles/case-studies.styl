@@ -1,0 +1,124 @@
+// shared styles
+@import '../../node_modules/nib'
+@import 'libs/mixins'
+@import 'libs/typography'
+@import 'libs/grid'
+@import 'libs/base'
+
+.case-studies-container
+  display grid
+  grid-template-columns 1fr
+
+  +tablet-portrait-up()
+    grid-template-columns vw-calc(324) auto
+    grid-column-gap 0
+
+  & > .div
+    height 100vh
+
+    +tablet-portrait-up()
+      min-height 600px
+
+  .case-studies-hero
+    flexbox(flex)
+    flex-direction(column)
+    justify-content(space-between)
+    min-height 100vh
+    min-height calc(var(--vh, 1vh)* 100 - 13vw)
+    padding vw-calc(72)
+    position relative !important
+    transition height 300ms ease
+    
+    +tablet-portrait-up()
+      padding vw-calc(32)
+      height calc(var(--vh, 1vh)* 100)
+      min-height 500px
+      position sticky !important
+
+    .logo
+      width 100%
+      margin-bottom vw-calc(240)
+
+      +tablet-portrait-up()
+        margin-bottom vw-calc(40)
+
+      svg
+        will-change transform
+        transform-origin top left
+
+        path
+          fill $offwhite
+
+    nav
+      li
+        padding-top vw-calc(40)
+
+        +tablet-portrait-up()
+          padding-top vw-calc(16)
+      a
+        color $offwhite
+
+        &:hover
+        &.active
+          font-family favline
+
+  .case-studies
+    box-shadow -1px 0 0 0 rgba($offwhite, 0.2)
+
+    .case-study
+      position relative
+      display block
+      color $offwhite
+      box-shadow 0 1px 0 0 rgba($offwhite, 0.2)
+      overflow hidden
+
+      &:hover
+        .case-study-background
+          opacity 1
+          transform scale(1.2)
+
+        .case-study-brand-name
+          text-transform none
+
+      .case-study-background
+        position absolute
+        top 0
+        left 0
+        height 100%
+        width 100%
+        background-size cover
+        background-repeat no-repeat
+        transform scale(1)
+        transition transform 10000ms linear
+
+        +tablet-portrait-up()
+          opacity 0
+
+      .case-study-content
+        position relative
+        flexbox(flex)
+        flex-direction(column)
+        justify-content(space-between)
+        padding vw-calc(72)
+        min-height 30vh
+        z-index 1
+
+        +tablet-portrait-up()
+          flex-direction(row)
+          align-items(center)
+          padding 0 vw-calc(32)
+          height 20vh
+          min-height 150px
+
+        .case-study-brand-name
+          font-size vw-calc(200)
+          font-weight 200
+          margin 0 0 vw-calc(72)
+
+          +tablet-portrait-up()
+            font-size vw-calc(100)
+            margin 0
+
+        .case-study-focus
+          text-align right
+        

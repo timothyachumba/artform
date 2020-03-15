@@ -1,5 +1,5 @@
 <div class="about">
-  <?php $building = $page->images()->first(); ?>
+  <?php $building = $page->image('building.jpg'); ?>
   <?php if ($building): ?>
     <div class="building sticky" style="background-image: url(<?php echo $building->url() ?>)"></div>
   <?php endif ?>

@@ -1,6 +1,9 @@
 .contact
   background-color $yves
 
+  +tablet-portrait-up()
+    border-top 1px solid black
+
   .honeypot
     position absolute
     left -9999px
@@ -14,10 +17,10 @@
     +tablet-portrait-up()
       padding vw-calc(32)
       height 100vh
-      min-height 700px
+      min-height 500px
 
     p
-    h2
+    h1
       margin 0 0 vw-calc(80)
 
       +tablet-portrait-up()

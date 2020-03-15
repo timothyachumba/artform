@@ -10,7 +10,7 @@
     <?php snippet('sections') ?>
     <footer>
       <?php snippet('contact') ?>
-      <?php $rocks = $page->images()->last(); ?>
+      <?php $rocks = $page->image('rocks.jpg'); ?>
       <?php if ($rocks): ?>
         <div class="rocks" style="background-image: url(<?php echo $rocks->url() ?>)"></div>
       <?php endif ?>

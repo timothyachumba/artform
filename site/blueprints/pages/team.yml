@@ -1,0 +1,27 @@
+title: Team
+preset: page
+pages: false
+  
+fields:
+  seotitle:
+    label: SEO Title
+    type: text
+    placeholder: Enter a catchy short title
+    maxlength: 60
+  seodescription:
+    label: SEO Description
+    type: textarea
+    placeholder: Enter a longer site description
+    maxlength: 160
+  finnname:
+    label: Finn's Full Name
+    type: text
+  finnbio:
+    label: Finn's Bio
+    type: textarea
+  jossname:
+    label: Joss' Full Name
+    type: text
+  jossbio:
+    label: Joss' Bio
+    type: textarea

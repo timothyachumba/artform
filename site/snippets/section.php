@@ -1,4 +1,5 @@
 <div class="<?php echo $sectionName ?> <?php echo $sectionName ?>-nav <?php echo $state ?> section">
+  <h1><?php echo $sectionName ?></h1>
   <?php
     $sectionTitle = $page->children()->find($sectionName)->title();
     $sectionTitleCount = strlen($sectionTitle);

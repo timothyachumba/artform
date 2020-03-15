@@ -1,0 +1,15 @@
+Title: Sony
+----
+Focus: Audit
+----
+Action: Qualitative research, Workshop, and Strategy
+----
+Text: ##Objective
+The creative industries are the fastest growing part of the UK economy, but when it comes to high definition displays, most are positioned for home entertainment and few are targeted at very high end professionals. Noticing a growing underserved market, Sony wanted to gain a better understanding of how to connect with and communicate to young creative audiences.
+
+##Action
+We led several user interviews and product tests with creative professionals across the architecture, graphic design, animation, and film sectors to explore and interrogate the needs and attitudes of the creative industry. The findings were used to facilitate a workshop that clarified distinct user scenarios and recommendations for both product design and communications strategy.
+
+##Result
+This approach enabled the design team to change the way they developed design briefs by connecting with real people throughout the process.
+----

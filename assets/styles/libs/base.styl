@@ -74,15 +74,23 @@ body
   color $black
   min-height 100vh
   height 100%
-  // opacity 0
+  opacity 0
   transition opacity 200ms 500ms linear
 
   +tablet-portrait-up()
     font-size vw-calc(34)
 
-  &.about
+  &.team
     background-color $offwhite
 
+
+h1
+  font-size vw-calc(140)
+  font-family fav
+  font-weight 400
+
+  +tablet-portrait-up()
+    font-size vw-calc(44)
 
 h2, p, ul, button
   font-size vw-calc(108)
@@ -92,6 +100,6 @@ h2, p, ul, button
   +tablet-portrait-up()
     font-size vw-calc(34)
 
-h2, button
+h1,h2, button
   font-weight normal
   text-transform uppercase

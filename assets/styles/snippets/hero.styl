@@ -5,17 +5,22 @@
   flex-direction(column)
   justify-content(space-between)
   background $yves
+  min-height 100vh /* Fallback for browsers that do not support Custom Properties */
+  min-height calc(var(--vh, 1vh)* 100 - 13vw)
+  transition height 300ms ease
 
   +tablet-portrait-up()
-    height 100vh
-    min-height 700px
+    height calc(var(--vh, 1vh)* 100 )
+    min-height 500px
     padding vw-calc(32)
     margin 0 0 100vh 0
 
   .logo
     width 100%
+    margin-bottom vw-calc(240)
     
     +tablet-portrait-up()
+      margin-bottom vw-calc(40)
       width 70%
       
     svg
@@ -58,16 +63,23 @@
         text-transform uppercase
         font-weight 500
         padding 0 0 vw-calc(80)
+        color black
 
         +tablet-portrait-up()
           font-size vw-calc(24)
           padding 0 0 vw-calc(24)
-
-    a
-      color black
-
-      &:hover
-        font-family favline
     
+    nav
+      li
+        padding-top vw-calc(40)
+
+        +tablet-portrait-up()
+          padding-top vw-calc(16)
+
+        a
+          color black
+
+          &:hover
+            font-family favline
     
     

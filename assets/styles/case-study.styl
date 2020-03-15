@@ -1,0 +1,125 @@
+// shared styles
+@import '../../node_modules/nib'
+@import 'libs/mixins'
+@import 'libs/typography'
+@import 'libs/grid'
+@import 'libs/base'
+
+.case-study-container
+  display grid
+  grid-template-columns 1fr
+  padding 0 vw-calc(72)
+  color $offwhite
+
+  +tablet-portrait-up()
+    grid-template-columns vw-calc(260) repeat(2, 1fr)
+    grid-column-gap vw-calc(32)
+    padding 0 vw-calc(32)
+
+  & > .div
+    height calc(var(--vh, 1vh)* 100)
+
+    +tablet-portrait-up()
+      min-height 600px
+
+  .case-study-hero
+    flexbox(flex)
+    flex-direction(column)
+    justify-content(space-between)
+    min-height 100vh /* Fallback for browsers that do not support Custom Properties */
+    min-height calc(var(--vh, 1vh)* 100 - 13vw)
+    padding vw-calc(72) 0
+    position relative !important
+    transition height 300ms ease
+
+    +tablet-portrait-up()
+      padding vw-calc(32) 0
+      width vw-calc(280)
+      height calc(var(--vh, 1vh)* 100)
+      min-height 500px
+      position sticky !important
+
+    .logo
+      width 100%
+      margin-bottom vw-calc(240)
+
+      +tablet-portrait-up()
+        width vw-calc(260)
+        margin-bottom vw-calc(40)
+
+      svg
+        will-change transform
+        transform-origin top left
+
+        path
+          fill $offwhite
+
+    nav
+      li
+        padding-top vw-calc(40)
+
+        +tablet-portrait-up()
+          padding-top vw-calc(16)
+      a
+        color $offwhite
+
+        &:hover
+        &.active
+          font-family favline
+
+  .case-study-image
+    position relative !important
+
+    +tablet-portrait-up()
+      height calc(var(--vh, 1vh)* 100)
+      position sticky !important
+
+    .image
+      height 67vh
+      background-position center center
+      background-size cover
+      margin vw-calc(72) 0
+
+      +tablet-portrait-up()
+        margin vw-calc(32) 0
+        height calc(var(--vh, 1vh)* 100 - 3.8095238095vw)
+
+  .case-study-text
+    padding vw-calc(72) 0
+
+    +tablet-portrait-up()
+      padding vw-calc(32) 0
+
+    h1
+      font-size vw-calc(180)
+      margin 0 0 vw-calc(24) 0
+      text-transform none
+
+      +tablet-portrait-up()
+        font-size vw-calc(80)
+
+    h2
+      margin 0 0 vw-calc(40) 0
+
+      +tablet-portrait-up()
+        margin 0 0 vw-calc(16) 0
+    p
+      margin 0 0 vw-calc(112) 0
+      opacity 0.8
+
+      +tablet-portrait-up()
+        margin 0 0 vw-calc(56) 0
+
+  .case-study-nav
+    flexbox(flex)
+
+    a
+      flex 1 auto
+      color $offwhite
+      opacity 0.8
+
+      &:hover
+        opacity 1
+
+      &.next
+        text-align right

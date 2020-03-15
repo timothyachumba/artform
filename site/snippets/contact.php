@@ -1,7 +1,7 @@
 <div class="contact">
 <div id="mc_embed_signup">
   <form action="https://london.us4.list-manage.com/subscribe/post?u=abf48254348cc40587653def2&amp;id=e07e46080e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <h2><?php echo $page->contacttitle() ?></h2>
+    <h1><?php echo $page->contacttitle() ?></h1>
     <p><?php echo $page->contacttext() ?></p>
     <div id="mc_embed_signup_scroll">
       <div class="mc-field-group">

@@ -1,0 +1,17 @@
+Title: Spotify
+----
+Focus: Audit
+----
+Action: Qualitative Research, Insight and Strategy
+----
+Text: ##Objective
+Despite the success of their platform, Spotify were at the heart still a tech business and were finding it difficult to stay up to date with new music culture, trends, styles and genres. 
+
+##Action
+We established a network of young creatives in cities around the world from Tokyo to Sao Paulo and built a ‘Collective’ for Spotify that feeds them a constant stream of richly visual, actionable insight. 
+
+The Collective was scalable and responsive. For example, when they entered the Indian market, we created an India specific Collective, delivering insight from the ground that helped to make their launch there a huge success.
+
+##Result
+Access to the Collective has revolutionised Spotify’s approach to cultural insight, helping them to stay one step ahead of market trends and to lead the way forward in music culture.
+----

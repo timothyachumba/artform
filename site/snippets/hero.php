@@ -6,26 +6,7 @@
       </svg>
     </div>
     <div class="hero-contact">
-      <?php
-        $items = $pages->listed();
-        if($items->isNotEmpty()):
-      ?>
-      <nav>
-        <ul>
-          <?php foreach($items as $item): ?>
-          <li><h2><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></h2></li>
-          <?php endforeach ?>
-        </ul>
-      </nav>
-      <?php endif ?>
-      <div class="links">
-        <a href="mailto:<?php echo $site->email() ?>">
-          <?php echo $site->email() ?>
-        </a>
-        <a href="https://instagram.com/<?php echo $site->instagram() ?>">
-          @<?php echo $site->instagram() ?>
-        </a>
-      </div>
+      <?php snippet('nav') ?>
     </div>
   </div>
 </header>

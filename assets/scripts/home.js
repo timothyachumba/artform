@@ -1,7 +1,16 @@
 global.jQuery = require('jquery')
 Marquee3k = require('marquee3000')
 stickybits = require('stickybits')
-innerHeight = require('ios-inner-height')
+
+window.addEventListener('resize', () => {
+
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+});
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -43,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   var acc = document.getElementsByClassName("accordion");
   var i;
-  var x = document.querySelector('.section').childElementCount;
+  var x = document.querySelector('.section').childElementCount - 1;
 
   function toggleAccordian(obj) {
     obj.classList.toggle("active");
@@ -75,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function(){
   
   document.querySelector('body').style.opacity = 1
   stickybits('.sticky')
+  
   
 })
 

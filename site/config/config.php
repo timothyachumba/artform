@@ -8,5 +8,8 @@ return [
         'pages' => [
             'active' => false
         ]
-    ]
+    ],
+    'panel' =>[
+        'install' => true
+      ]
 ];

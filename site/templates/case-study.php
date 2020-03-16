@@ -10,7 +10,7 @@
       <?php snippet('nav') ?>
     </div>
     <div class="case-study-image sticky">
-      <?php $background = $page->images()->first(); ?>
+      <?php $background = $page->image('image.jpg'); ?>
       <?php if ($background): ?>
       <div class="image" style="background-image: url(<?php echo $background->url() ?>)"></div>
       <?php endif ?>

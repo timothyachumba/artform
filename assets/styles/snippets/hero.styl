@@ -5,12 +5,12 @@
   flex-direction(column)
   justify-content(space-between)
   background $yves
-  min-height 100vh /* Fallback for browsers that do not support Custom Properties */
+  height calc(var(--vh, 1vh)* 100 - 13vw)
   min-height calc(var(--vh, 1vh)* 100 - 13vw)
-  transition height 300ms ease
+  transition height 200ms ease
 
   +tablet-portrait-up()
-    height calc(var(--vh, 1vh)* 100 )
+    height calc(var(--vh, 1vh)* 100)
     min-height 500px
     padding vw-calc(32)
     margin 0 0 100vh 0

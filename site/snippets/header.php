@@ -50,6 +50,11 @@
 
   <link rel="stylesheet" type="text/css" href="<?php echo ($site->url() . '/assets/build/' . $page->template() . '.css') ?>">
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+
 </head>
 
 <body class="<?php echo $page->uid() ?>">
+
+<script>
+  document.body.style.opacity = 1
+</script>

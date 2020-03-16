@@ -5,9 +5,12 @@ Marquee3k = require('marquee3000')
 stickybits = require('stickybits')
 
 window.addEventListener('resize', () => {
+  const mq = window.matchMedia( "(min-width: 768px)" )
 
+  if (mq.matches) {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
 
 });
 
@@ -84,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   });
   
-  document.querySelector('body').style.opacity = 1
   stickybits('.sticky')
   
   

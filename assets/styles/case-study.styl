@@ -28,6 +28,7 @@
     justify-content(space-between)
     min-height 100vh /* Fallback for browsers that do not support Custom Properties */
     min-height calc(var(--vh, 1vh)* 100 - 13vw)
+    height auto
     padding vw-calc(72) 0
     position relative !important
     transition height 300ms ease
@@ -69,6 +70,7 @@
 
   .case-study-image
     position relative !important
+    transition height 300ms ease
 
     +tablet-portrait-up()
       height calc(var(--vh, 1vh)* 100)
@@ -77,6 +79,7 @@
     .image
       height 67vh
       background-position center center
+      transition height 300ms ease
       background-size cover
       margin vw-calc(72) 0
 

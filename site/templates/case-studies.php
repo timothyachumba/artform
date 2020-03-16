@@ -19,7 +19,7 @@
             <p><?php echo $casestudy->action() ?></p>
           </div>
         </div>
-        <?php $background = $casestudy->images()->first(); ?>
+        <?php $background = $casestudy->image('image.jpg'); ?>
         <?php if ($background): ?>
           <div class="case-study-background" style="background-image: url(<?php echo $background->url() ?>)"></div>
         <?php endif ?>

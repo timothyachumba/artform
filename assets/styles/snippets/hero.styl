@@ -5,9 +5,12 @@
   flex-direction(column)
   justify-content(space-between)
   background $yves
-  height calc(var(--vh, 1vh)* 100 - 13vw)
-  min-height calc(var(--vh, 1vh)* 100 - 13vw)
-  transition height 200ms ease
+  height calc(var(--vh, 1vh)* 100)
+  min-height calc(var(--vh, 1vh)* 100)
+
+  +larger-height-up()
+    height calc(var(--vh, 1vh)* 100 - 13vw)
+    min-height calc(var(--vh, 1vh)* 100 - 13vw)
 
   +tablet-portrait-up()
     height calc(var(--vh, 1vh)* 100)

@@ -48,15 +48,9 @@
   <link rel="icon" href="<?php echo $site->url() ?>/favicon-196.png">
 
   <link rel="preload" href="<?php echo $site->url() ?>/assets/fonts/frl.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="<?php echo $site->url() ?>/assets/fonts/frl.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="<?php echo $site->url() ?>/assets/fonts/frl.ttf" as="font" type="font/ttf" crossorigin>
-
   <link rel="preload" href="<?php echo $site->url() ?>/assets/fonts/fml.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="<?php echo $site->url() ?>/assets/fonts/fml.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="<?php echo $site->url() ?>/assets/fonts/fml.ttf" as="font" type="font/ttf" crossorigin>  
 
-
-  <link rel="stylesheet" type="text/css" href="<?php echo ($site->url() . '/assets/build/' . $page->template() . '.css') ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo ($site->url() . '/assets/build/' . $page->template() . '.css') ?>" async>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
 
 </head>
@@ -64,8 +58,7 @@
 <body class="<?php echo $page->uid() ?>">
 
 <script>
-  
-  window.addEventListener('load', function () {
+  window.addEventListener('load', () => {
     document.body.style.opacity = 1
   })
 </script>

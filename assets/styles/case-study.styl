@@ -27,11 +27,15 @@
     flex-direction(column)
     justify-content(space-between)
     min-height 100vh /* Fallback for browsers that do not support Custom Properties */
-    min-height calc(var(--vh, 1vh)* 100 - 13vw)
+    min-height calc(var(--vh, 1vh)* 100)
     height auto
     padding vw-calc(72) 0
     position relative !important
     transition height 300ms ease
+
+    +larger-height-up()
+      height calc(var(--vh, 1vh)* 100 - 13vw)
+      min-height calc(var(--vh, 1vh)* 100 - 13vw)
 
     +tablet-portrait-up()
       padding vw-calc(32) 0

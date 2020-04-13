@@ -18,7 +18,7 @@
     if($page->seotitle()->isNotEmpty()) {
       $pageseotitle = $page->seotitle();
     } else {
-      $pageseotitle = $site->title() | $page->title();
+      $pageseotitle = $site->title() . '|' . $page->title();
     }
     if($page->seodescription()->isNotEmpty()) {
       $pageseodescription = $page->seodescription();

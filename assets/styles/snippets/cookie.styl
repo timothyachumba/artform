@@ -5,28 +5,28 @@
   @-webkit-keyframes fadeInRight
     0%
       opacity 0
-      -webkit-transform translateX(20px)
-      transform translateX(20px)
+      -webkit-transform translateY(20px)
+      transform translateY(20px)
   
     100%
       opacity 1
-      -webkit-transform translateX(0)
-      transform translateX(0)
+      -webkit-transform translateY(0)
+      transform translateY(0)
   
 
 
   @keyframes fadeInRight
     0%
       opacity 0
-      -webkit-transform translateX(20px)
-      -ms-transform translateX(20px)
-      transform translateX(20px)
+      -webkit-transform translateY(20px)
+      -ms-transform translateY(20px)
+      transform translateY(20px)
   
     100%
       opacity 1
-      -webkit-transform translateX(0)
-      -ms-transform translateX(0)
-      transform translateX(0)
+      -webkit-transform translateY(0)
+      -ms-transform translateY(0)
+      transform translateY(0)
   
 
 
@@ -38,11 +38,13 @@
     color $offwhite
     box-sizing border-box
     flexbox(flex)
+    flex-direction(column)
     align-items(center)
-    bottom size-calc(3)
-    right size-calc(3)
-    left size-calc(3)
+    bottom size-calc(8)
+    right size-calc(1)
+    left size-calc(1)
     border-radius size-calc(10)
+    display none
 
     p
     button  
@@ -54,13 +56,21 @@
       bottom size-calc(3)
       right size-calc(3)
       left auto
+      flex-direction(row)
+      align-items(center)
+      border-radius size-calc(10)
 
       p
       button  
         font-size vw-calc(24)
   
     .cookie_message
-      padding-right size-calc(2)
+      padding-bottom size-calc(1)
+      text-align center
+
+      +tablet-portrait-up()
+        padding-right size-calc(2)
+
       a
         text-decoration none
         color $yves
